@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JSmol Demo</title>
+    <script type="text/javascript" src="https://chemapps.stolaf.edu/jmol/jsmol/JSmol.min.js"></script>
+</head>
+<body>
+    <script type="text/javascript">
+        Jmol.getApplet("jmolApplet", {
+            width: 400,
+            height: 400,
+            j2sPath: "https://chemapps.stolaf.edu/jmol/jsmol/j2s",
+            serverURL: "https://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
+            script: "load data \"H2O.xyz\""
+        })
+    </script>
+    <div id="jmolApplet"></div>
+</body>
+</html>
